@@ -1,7 +1,8 @@
 # Wireguard Keepalive
 
 When using Wireguard with dynDNS endpoints, Wireguard does not automatically
-re-resolve the hostname when its IP changes and the connection fails.
+re-resolve the hostname when its IP changes, which causes the connection to
+fail when it does.
 
 This project provides a simple script along with a systemd timer that
 periodically checks if the connection is currently working (by sending a ping to
