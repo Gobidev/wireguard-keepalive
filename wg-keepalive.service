@@ -1,0 +1,7 @@
+[Unit]
+Description=Service for restarting wireguard if necessary
+
+[Service]
+Type=oneshot
+ExecStart=/opt/wg-keepalive.sh
+User=root
