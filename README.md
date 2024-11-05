@@ -11,6 +11,8 @@ a host in the network) and restarts the wireguard connection if it is not.
 
 - Run `./install.sh` as root
 - Edit the interface name and ping endpoint in `/opt/wg-keepalive.sh`
+- Optional: Adjust check frequency in `/etc/systemd/system/wg-keepalive.timer`
+  (default: every 5 minutes)
 
 ## TODOs
 
